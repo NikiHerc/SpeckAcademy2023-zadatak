@@ -1,0 +1,23 @@
+body{
+    
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+.tehnologije{
+
+border-radius: 15%;
+max-width: fit-content;
+padding: 15px;
+box-shadow:  2px 2px 3px 1px grey;
+
+justify-self: center;
+
+
+}
+#grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    padding: 20px;
+    
+}
