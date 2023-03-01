@@ -5,11 +5,6 @@ body{
     margin: 0 25%;
     width: 50%; 
 }
-main{
-    height: 90%;
-    position: relative;
-}
-
 #grid{
     display: grid;
     grid-template-columns:48% 48%;
@@ -17,30 +12,37 @@ main{
     height: 70%;
 }
 h1{
-    
     font-size: 30px;
 }
 #unosTehnologije{
     position: relative;
 }
 .tehnologije{
-border-radius: 10%;
-width: 100%;
+border-radius: 3%;
 padding: 40px 5px;
-box-shadow:  2px 2px 3px 1px grey;
+box-shadow:  0px 1px 3px 1px grey;
 text-align: center;
 font-weight: bold;
-font-size: x-large;
+font-size: xx-large;
 word-wrap: break-word;
-
+position: relative;
+}
+.tehnologije:hover{
+    cursor: context-menu;
 }
 #removeItems{
     visibility: hidden;
     color: red;
     text-decoration: underline;
-    position: relative;
-    float: right;
-    
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px; 
+}
+#removeItems:hover{
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
 }
 #inputPolje{
     border-style: groove;
@@ -48,8 +50,7 @@ word-wrap: break-word;
     box-shadow: 0px 0px 4px 0px grey inset;
     padding: 12px;
     border-color: grey;
-    
-
+    width: 25%;
 }
 #addButton{
     padding: 10px;
@@ -62,13 +63,12 @@ word-wrap: break-word;
     min-width: fit-content;
     font-weight: bold;
     font-size: large;
-
 }
 #addButton:hover{
     background-color: rgb(255, 67, 67);
     color: white;
     border-color: red;
-    
+    cursor: pointer;
 }
 #inputPolje:focus{
     border: 2px solid;
@@ -81,15 +81,12 @@ word-wrap: break-word;
     #grid{
         display: block;
     }
-    
 }
 @media screen and (max-width: 750px ) {
     #grid{
         display: block;
-
     }
     #removeItems{
         float: none;
     }
-    
 }
